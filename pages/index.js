@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Script from 'next/script'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,7 +8,10 @@ export default function Home() {
       <style jsx>
         {`
         h2{
-          font-size: 40px;
+          font-size: 30px;
+        }
+        h3{
+          font-size: 20px;
         }
         `}
       </style>
@@ -20,14 +21,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Script src= '/sc.js' strategy='lazyOnload'></Script> */}
-      <nav className={styles.mainNav}>
-        <ul>
-        <Link href={'/'}><li><a>Home</a></li></Link>
-        <Link href={'/about'}><li><a>About</a></li></Link>
-        <Link href={'/blog'}><li><a>Blog</a></li></Link>
-        <Link href={'/contact'}><li><a>Contact</a></li></Link>
-        </ul>
-      </nav>
       <main className={styles.main}>
         <h1 className={styles.title}>
           <span className='mySpan'>Techie's Blog</span>
@@ -39,18 +32,18 @@ export default function Home() {
 <Image className ={styles.myImg} src="/homeimg.jpeg" alt="" width={570} height={380}/>
         <div className="blog">
           <h2>First Blog</h2>
-          <div className="blogItem"></div>
+          <div className="blogItem">
           <h3>Hi, my name is Bhanu Pratap</h3>
-          <p>I am looking to get good practical experience in web development.
-          </p>
-          <div className="blogItem"></div>
+          <p>I am looking to get good practical experience in web development.</p>
+          </div>
+          <div className="blogItem">
           <h3>Hi, my name is Bhanu Pratap</h3>
-          <p>I am looking to get good practical experience in web development.
-          </p>
-          <div className="blogItem"></div>
+          <p>I am looking to get good practical experience in web development.</p>
+          </div>
+          <div className="blogItem">
           <h3>Hi, my name is Bhanu Pratap</h3>
-          <p>I am looking to get good practical experience in web development.
-          </p>
+          <p>I am looking to get good practical experience in web development.</p>
+          </div>
         </div>
       </main>
 
